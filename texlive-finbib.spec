@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /biblio/bibtex/contrib/misc/finplain.bst
+# catalog-date 2008-12-07 00:01:13 +0100
+# catalog-license other-free
+# catalog-version undef
 Name:		texlive-finbib
 Version:	20081207
 Release:	1
@@ -33,6 +39,7 @@ TeXLive finbib package.
 #-----------------------------------------------------------------------
 %files
 %{_texmfdistdir}/bibtex/bst/finbib/finplain.bst
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -43,3 +50,5 @@ TeXLive finbib package.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar bibtex %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
