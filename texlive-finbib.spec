@@ -41,3 +41,17 @@ TeXLive finbib package.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar bibtex %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20081207-2
++ Revision: 751871
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20081207-1
++ Revision: 718441
+- texlive-finbib
+- texlive-finbib
+- texlive-finbib
+- texlive-finbib
+
