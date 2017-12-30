@@ -5,8 +5,8 @@
 # catalog-license other-free
 # catalog-version undef
 Name:		texlive-finbib
-Version:	20081207
-Release:	10
+Version:	20170414
+Release:	1
 Summary:	A Finnish version of plain.bst
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/biblio/bibtex/contrib/misc/finplain.bst
