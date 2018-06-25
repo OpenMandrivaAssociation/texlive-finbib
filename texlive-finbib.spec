@@ -5,7 +5,7 @@
 # catalog-license other-free
 # catalog-version undef
 Name:		texlive-finbib
-Version:	20170414
+Version:	20180303
 Release:	1
 Summary:	A Finnish version of plain.bst
 Group:		Publishing
