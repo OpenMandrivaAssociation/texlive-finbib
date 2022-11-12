@@ -1,17 +1,11 @@
-# revision 15878
-# category Package
-# catalog-ctan /biblio/bibtex/contrib/misc/finplain.bst
-# catalog-date 2008-12-07 00:01:13 +0100
-# catalog-license other-free
-# catalog-version undef
 Name:		texlive-finbib
-Version:	20190228
+Version:	15878
 Release:	1
 Summary:	A Finnish version of plain.bst
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/biblio/bibtex/contrib/misc/finplain.bst
 License:	OTHER-FREE
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/finbib.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/finbib.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -21,12 +15,12 @@ Requires(post):	texlive-kpathsea
 TeXLive finbib package.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -34,24 +28,10 @@ TeXLive finbib package.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0
+%autosetup -p1 -c
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar bibtex %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20081207-2
-+ Revision: 751871
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20081207-1
-+ Revision: 718441
-- texlive-finbib
-- texlive-finbib
-- texlive-finbib
-- texlive-finbib
-
