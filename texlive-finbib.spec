@@ -3,7 +3,7 @@ Version:	15878
 Release:	2
 Summary:	A Finnish version of plain.bst
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/biblio/bibtex/contrib/misc/finplain.bst
+URL:		https://www.ctan.org/tex-archive/biblio/bibtex/contrib/misc/finplain.bst
 License:	OTHER-FREE
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/finbib.r%{version}.tar.xz
 BuildArch:	noarch
